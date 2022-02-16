@@ -1,0 +1,48 @@
+#allin {
+  align-self: center;
+  display: flex;
+  flex-direction:column;
+  width: 90vw;
+}
+body {
+  display:flex;
+  flex-direction:column;
+  font-size: 1.5em;
+  
+}
+#mainNavbar {
+  position: sticky;
+  top: 115px;
+  margin-top: 10px;
+  padding-bottom: 0;
+  z-index: 2;
+  order: 1;
+}
+#mainNavbar nav {
+  border: none;
+}
+#category {
+  max-width: 40vw;
+  z-index: 2;
+  order: 2;
+}
+main {
+  order: 3;
+}
+.productBox img {
+  height: 400px;
+}
+#filterbox {
+  z-index: 3;
+  right: 90px;
+  top: 170px;
+}
+#bottom {
+  order: 4;
+}
+/* media query per reposicionar la barra de navegació en el cas que es posicioni landscape el dispositiu */
+@media screen and (orientation:landscape) {
+  #mainNavbar {
+    top: 85px;
+}
+}
